@@ -6,6 +6,13 @@ $textColor: #37373F;
 $textColorLight: #B3B3B3;
 $linkColor: #5286EC;
 
+$breakpoints:(
+    sm:576px,
+    md:768px,
+    lg:1280px,
+    xl:1440px
+);
+
 %container{
     padding:0 15px;
     width: 100%;
@@ -19,7 +26,7 @@ $linkColor: #5286EC;
     @media screen and (min-width:768px){
             padding:0 50px;
         }
-        
+
     @media screen and (min-width:1280px){
             padding:0 ;
         }
