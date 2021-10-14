@@ -1,0 +1,150 @@
+.info{
+    background-color: $primaryColor;
+
+    .container{
+        @extend %container;
+        border:1px solid red;
+    }
+    &__wrapper{
+        margin-top: 38px;
+        @include media(lg){
+            position: relative;
+        }
+    }
+    &__title{
+        @include text(400,28px,34px,$textColor);
+        margin-bottom:11px;
+        text-align: center;
+        @include media(lg){
+            text-align: left;
+        }
+    }
+    &__photo{
+        margin-bottom:25px;
+        width: 100%;
+        max-width: 668px;
+        object-fit:cover;
+        @include media(lg){
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 554px;
+        }
+    }
+    &__paragraf{
+        @include text(400,14px,20px,$textColor);
+        max-width: 549px;
+        margin-bottom: 35px;
+        word-spacing: -1px;
+        @include media(sm){
+            @include text(400,18px,26px,$textColor);
+            padding-right: 30px;
+            margin-bottom:15px;
+        }
+    }
+    &__content{
+        display: grid;
+        grid-template-rows: repeat(4,35px);
+        grid-template-columns: 30px 270px;
+        grid-gap: 13px;
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+        @include text(400,14px,20px,$textColor);
+        
+    }
+    &__line-top{
+        margin-top:46px;
+        margin-bottom:5px;
+        @include media(lg){
+            max-width: 569px;
+        }
+    }
+    &__line-bottom{
+        margin-top:14px;
+        @include media(sm){
+            padding-top: 30px;
+        }
+        @include media(lg){
+            max-width: 569px;
+        }
+
+    }
+    &__cup{
+        position:absolute;
+        width: 28px;
+    }
+    &__rating-wrapper{
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        // justify-content: stretch;
+        margin-left: 40px;
+        @include media(sm){
+            flex-direction: row;
+            align-items: center;
+        }
+        
+    }
+    &__rating-text{
+        @include text(400,14px,20px,$textColor);
+        margin-right: 14px;
+        @include media(sm){
+            @include text(400,18px,20px,$textColor);
+        }
+    }
+    &__rating{
+        position: relative;
+        font-size: 28px;
+        display: inline-block;
+        &::before{
+            content: "★★★★★";
+            display: block;
+        }
+        .rating__items{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction:row-reverse;
+            overflow: hidden;
+        }
+        .rating__item{
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            top: 0;
+            left: 0;
+        }
+        .rating__label{
+            flex:0 0 20%;
+            height: 100%;
+            cursor: pointer;
+            color:$accentColor;
+        }
+        .rating__label::before{
+            content:"★";
+            display: block;
+            transition: color 0.3s ease 0s;
+            -webkit-transition: color 0.3s ease 0s;
+            -moz-transition: color 0.3s ease 0s;
+            -ms-transition: color 0.3s ease 0s;
+            -o-transition: color 0.3s ease 0s;
+            }
+        .rating__label:hover,
+        .rating__label:hover ~ .rating__label,
+        .rating__label:checked ~ .rating__label:hover{
+            color:$accentColor;
+        }
+        .rating__item:checked,
+        .rating__item:checked ~ .rating__label{
+            color:$accentColor;
+        }    
+    }
+
+}
