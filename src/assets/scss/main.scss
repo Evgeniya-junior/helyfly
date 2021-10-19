@@ -17,9 +17,15 @@ body {
 a{
     text-decoration: none;
 }
+hr{
+    color:#C7C7C7;
+}
 @import './header';
 @import './main-block';
 @import './info';
+@import './grade';
+@import './rating';
 @import './photo';
 @import './slick';
 @import './about';
+@import './time';

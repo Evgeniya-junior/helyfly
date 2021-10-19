@@ -1,0 +1,109 @@
+.time{
+    background-color:$primaryColor;
+    .container{
+        @extend %container; 
+        margin-top:52px;
+        border-top:1px solid $secondaryColor;     
+    }
+    &__grade{
+        padding-left:20px;
+        margin-top:28px;
+        margin-bottom: 48px;
+        @include media(sm){
+            margin-top: 54px;
+            }
+    }
+   
+    &__title{
+        @include text(400,26px,32px,$textColor);
+        max-width: 288px;
+        padding: 40px 0;
+        margin:auto;
+        @include media(sm){
+            padding:10px 0 46px;
+            line-height: 38px;
+            }
+        @include media(md){
+            margin:0;
+            padding:50px 0 30px;
+            }
+    }
+    &__calendar{
+        border:1px solid $secondaryColor;
+        max-width: 770px;
+        max-height: 458px;
+    }
+    &__list{
+        list-style: none;
+        position: relative;
+    }
+    &__calendar-data{
+        @include text(500,18px,26px,$textColor);
+        text-align: center;
+        padding: 16px;
+        @include media(sm){
+            padding:27px 20px 20px;
+            text-align: left;
+            }
+    }
+    &__line-center{
+        margin-bottom:5px;
+        margin-top: 30px;
+        @include media(sm){
+            margin-bottom:0px;
+            margin-top: 20px;
+        }
+    }
+    &__line-center2{
+        margin-bottom:5px;
+        margin-top: 30px;
+        @include media(sm){
+            display: none;
+        }
+    }
+    &__item-time{
+        @include text(400,18px,26px,$textColor);
+        padding: 27px 20px 0px;
+        @include media(sm){
+            padding: 16px 20px 0px;
+        }
+    }
+    &__item-place{
+        @include text(400,18px,26px,$textColor);
+        padding:0px 20px 20px;
+        @include media(sm){
+            padding:0px 20px;
+        }
+    }
+    &__item-price{
+        @include text(600,18px,22px,$textColor);
+        padding: 10px 20px;
+    }
+    &__button{
+        background-color:$primaryColor;
+        width: 129px;
+        height: 50px;
+        @include text(500,14px,17px,$accentColor);
+        border:1px solid $accentColor;
+        padding: 16px 31px;
+        margin: 0 20px;
+        @include media(sm){
+            position: absolute;
+            top: 35%;
+            right: 0%;
+        }
+        }
+    
+    &__line-bottom{
+        display:none;
+    }
+    // &__line-bottom{
+    //     margin-top:14px;
+    //     @include media(sm){
+    //     padding-top: 30px;
+    //     }
+    //     @include media(lg){
+    //     max-width: 569px;
+    //     }
+    // }
+}
