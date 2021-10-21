@@ -34,7 +34,7 @@
     }
 
     &__citi-phone{
-        @include text(400,14px,17px,$linkColor);
+        background-color:$primaryColor;
         @include media(sm){
             display: none;
         }
@@ -53,7 +53,7 @@
     }
 
     &__user{
-        @media screen and (min-width:1280px){
+        @include media(lg){
             display: none;
         }
     }

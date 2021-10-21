@@ -1,0 +1,102 @@
+.reviews{
+    background-color:$primaryColor;
+    .container{
+        @extend %container;
+    }
+    &__comment{
+        position:relative;
+        // @include media(md){
+        //     display: flex;
+        //     flex-direction: column;
+        // }
+        
+    }
+    &__comment3{
+        display:none;
+        @include media(sm){
+            display: block;
+        }
+    }
+    &__title{
+        @include text(400,26px,39px,$textColor);
+        text-align: center;
+        margin-bottom: 50px;
+        @include media(md){
+            @include text (500,20px,29px,$textColor);
+            text-align: left;
+        }
+    }
+    &__autor{
+        display:flex;
+        justify-content: flex-start;
+        margin-bottom: 24px;
+    }
+    &__autor-logo{
+        margin-right: 18px;
+    }
+    &__output{
+        @include text(400,14px,21px,$textColorLight);
+        position: relative;
+        padding-left: 20px;
+        &::before{
+            content:'';
+            display: inline-block;
+            background-image: url(../images/chek-mark.svg);
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15px;
+            height: 12px;
+        }
+        @include media(md){
+            position: absolute;
+            top: 24%;
+            left:38%;
+        }   
+        @include media(lg){
+            left:22%;
+        } 
+    }
+    &__autor-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-top: 5px;
+    }
+    &__autor-name{
+        @include text(500,16px,19px,$textColor);
+    }
+    &__autor-position{
+        @include text(400,14px,21px,$textColor);
+    }
+    &__rating{
+        margin-left: 0;
+    }
+    &__comment-text{
+        @include media(md){
+            max-width: 510px;
+            margin-left: 100px;
+        }
+    }
+    &__paragraf{
+        @include text(400,14px,21px,$textColor);
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 17px;
+        @include media(sm){
+            min-width: 505px;
+        }
+        @include media(md){
+            min-width: 510px;
+        }
+        
+    }
+    &__data{
+        @include text(400,14px,21px,$textColorLight);
+    }
+    &__line{
+        margin:44px 0 20px;
+    }
+}

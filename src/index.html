@@ -61,8 +61,8 @@
                     <div class="info__icon"><img class="icon__clouds" src="./assets/images/clouds.svg" alt="clouds"></div>
                     <div class="info__text">Готовы ответить на любые вопросы</div>
                 </div> 
-                <div class="info__grade grade">
-                    <hr class="grade__line-top" />
+                <hr class="info__line-top" />
+                <div class="info__grade grade">   
                     <img class="grade__cup" src="./assets/images/cup.svg" alt="cup">
                     <p class="grade__text">Более 150 отзывов с оценкой</p>                
                     <div class="grade__rating rating">  
@@ -79,8 +79,8 @@
                                 <label for="rating__1" class="rating__label"></label>
                             </div>
                     </div>                  
-                    <hr class="info__line-bottom" />
                 </div> 
+                <hr class="info__line-bottom" />
             </div>
         </div>
     </section>
@@ -88,7 +88,7 @@
     <section class="photo">
         <div class="container">
             <h2 class="photo__title">Фотографии <br>пакета</h2>
-            <div class="slider">
+            <!-- <div class="slider">
                 <div class="slider__item"><img class="item__photo-1" src="./assets/images/photo-1.jpg" alt="Girl on the background of the plane"></div>
                 <div class="slider__item"><img class="item__photo-2" src="./assets/images/photo-2.jpg" alt="Girl in the helicopter cockpit"></div>
                 <div class="slider__item"><img class="item__photo-3" src="./assets/images/photo-3.jpg" alt="Helicopter cockpit"></div>
@@ -97,7 +97,7 @@
                 <div class="slider__item"><img class="item__photo-6" src="./assets/images/photo-2.jpg" alt="Girl in the helicopter cockpit"></div>
                 <div class="slider__item"><img class="item__photo-7" src="./assets/images/photo-3.jpg" alt="Helicopter cockpit"></div>
                 <div class="slider__item"><img class="item__photo-8" src="./assets/images/photo-4.jpg" alt="Photo of kissing couple"></div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -176,18 +176,144 @@
                                 <label for="rating__1" class="rating__label"></label>
                             </div>
                     </div>                  
-                </div>   
-                <hr class="time__line-bottom" />         
-            </div>
-            
+                </div>            
+            </div>           
         </div>
     </section>
 
+    <section class="map">
+        <div class="map__google"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27
+        9603.69215449184!2d37.2410279199907!3d55.6992143684815!2m3!1f0!2f0!3f
+        0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc57
+        57cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1634
+        639088050!5m2!1sru!2sby" width="100%" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy"></iframe></div>  
+        <div class="map__meet">
+            <div class="container">
+                <div class="map__wrapper">
+                    <div class="map__place">
 
+                    </div>
+                    <div class="map__photographer">
+                        <div class="map__photographer-logo">
+                            <img class="map__photographer-photo" src="./assets/images/photograher.jpg" alt="Photo photographer" >
+                        </div>
+                        <div class="map__photographer-info">
+                            <h3 class="map__photographer-name">Марина Иванова</h3>
+                            <span class="map__photographer-span">Фотограф</span>
+                            <a href="#" class="map__photographer-link">Показать больше информации о фотографе</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
 
+    <section class="reviews"> 
+        <div class="container">
+            <h2 class="reviews__title">Отзывы</h2>
+            
+            <div class="reviews__comment">
+                <div class="reviews__autor">
+                    <div class="reviews__autor-logo">
+                        <img class="reviews__autor-photo" src="./assets/images/comment1.jpg" alt="Photo of the author of the comment" >
+                    </div>
+                    <div class="reviews__autor-info">
+                        <h3 class="reviews__autor-name">Валерия Антонова</h3>
+                        <span class="reviews__autor-position">Арт-директор</span>
+                        <div class="reviews__rating rating">  
+                            <div class="rating__items">
+                                <input id="rating__5" type="radio" class="rating__item" name="rating" checked value="5">
+                                <label for="rating__5" class="rating__label"></label>
+                                <input id="rating__4" type="radio" class="rating__item" name="rating" checked value="4">
+                                <label for="rating__4" class="rating__label"></label>
+                                <input id="rating__3" type="radio" class="rating__item" name="rating" checked value="3">
+                                <label for="rating__3" class="rating__label"></label>
+                                <input id="rating__2" type="radio" class="rating__item" name="rating"  checked value="2">
+                                <label for="rating__2" class="rating__label"></label>
+                                <input id="rating__1" type="radio" class="rating__item" name="rating"  checked value="1">
+                                <label for="rating__1" class="rating__label"></label>
+                            </div>
+                    </div> 
+                    </div>
+                </div>
+                <span class="reviews__output">Супер! Я бы заказала съемку снова!</span>
+                <div class="reviews__comment-text">
+                    <p class="reviews__paragraf">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!</p>
+                    <span class="reviews__data">27 Апреля, 2019г.</span>
+                    <hr class="reviews__line">
+                </div>         
+            </div>
+            <div class="reviews__comment">
+                <div class="reviews__autor">
+                    <div class="reviews__autor-logo">
+                        <img class="reviews__autor-photo" src="./assets/images/comment2.jpg" alt="Photo of the author of the comment" >
+                    </div>
+                    <div class="reviews__autor-info">
+                        <h3 class="reviews__autor-name">Виталий Петров</h3>
+                        <span class="reviews__autor-position">Фотограф</span>        
+                        <div class="reviews__rating rating">  
+                            <div class="rating__items">
+                                <input id="rating__5" type="radio" class="rating__item" name="rating" checked value="5">
+                                <label for="rating__5" class="rating__label"></label>
+                                <input id="rating__4" type="radio" class="rating__item" name="rating" checked value="4">
+                                <label for="rating__4" class="rating__label"></label>
+                                <input id="rating__3" type="radio" class="rating__item" name="rating" checked value="3">
+                                <label for="rating__3" class="rating__label"></label>
+                                <input id="rating__2" type="radio" class="rating__item" name="rating"  checked value="2">
+                                <label for="rating__2" class="rating__label"></label>
+                                <input id="rating__1" type="radio" class="rating__item" name="rating"  checked value="1">
+                                <label for="rating__1" class="rating__label"></label>
+                            </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="reviews__comment-text">
+                    <span class="reviews__output">Супер! Я бы заказала съемку снова!</span>
+                    <p class="reviews__paragraf"> Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо!</p>
+                    <span class="reviews__data">19 Апреля, 2019г.</span>
+                    <hr class="reviews__line">
+            </div>
+        </div>
+            <div class="reviews__comment3">
+                <div class="reviews__autor">
+                    <div class="reviews__autor-logo">
+                        <img class="reviews__autor-photo" src="./assets/images/comment3.jpg" alt="Photo of the author of the comment" >
+                    </div>
+                    <div class="reviews__autor-info">
+                        <h3 class="reviews__autor-name">Джим Керри</h3>
+                        <span class="reviews__autor-position"></span>        
+                        <div class="reviews__rating rating">  
+                            <div class="rating__items">
+                                <input id="rating__5" type="radio" class="rating__item" name="rating" checked value="5">
+                                <label for="rating__5" class="rating__label"></label>
+                                <input id="rating__4" type="radio" class="rating__item" name="rating" checked value="4">
+                                <label for="rating__4" class="rating__label"></label>
+                                <input id="rating__3" type="radio" class="rating__item" name="rating" checked value="3">
+                                <label for="rating__3" class="rating__label"></label>
+                                <input id="rating__2" type="radio" class="rating__item" name="rating"  checked value="2">
+                                <label for="rating__2" class="rating__label"></label>
+                                <input id="rating__1" type="radio" class="rating__item" name="rating"  checked value="1">
+                                <label for="rating__1" class="rating__label"></label>
+                            </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="reviews__comment-text">
+                    <span class="reviews__output">Супер! Я бы заказала съемку снова!</span>
+                    <p class="reviews__paragraf">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы 
+                    с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+                    <span class="reviews__data">19 Апреля, 2019г.</span>
+                    <hr class="reviews__line">
+                </div>
+            </div>
+        </div>
+    </section> 
 
+    <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/slick.min.js"></script> -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

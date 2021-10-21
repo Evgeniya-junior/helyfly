@@ -3,7 +3,6 @@
 
     .container{
         @extend %container;
-        border:1px solid red;
     }
     &__wrapper{
         margin-top: 38px;
@@ -53,6 +52,26 @@
         align-items: center;
         @include text(400,14px,20px,$textColor);
         
+    }
+    &__line-top{
+        margin-top:46px;
+        margin-bottom:5px;
+        @include media(sm){
+            margin-top: 30px;
+            margin-bottom: 30px;
+            }
+        @include media(lg){
+        max-width: 569px;
+        }
+    }
+    &__line-bottom{
+        margin-top:14px;
+        @include media(sm){
+        margin-top: 23px;
+        }
+        @include media(lg){
+        max-width: 569px;
+        }
     }
 
 }

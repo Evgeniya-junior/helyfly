@@ -1,3 +1,7 @@
+$('.single-item').slick();
+
+
+
 // $(document).ready(function(){
 //     $('.slider').slick();
 // });

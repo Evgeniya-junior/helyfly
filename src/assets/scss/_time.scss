@@ -3,12 +3,15 @@
     .container{
         @extend %container; 
         margin-top:52px;
-        border-top:1px solid $secondaryColor;     
+        @include media(sm){
+            border-top:1px solid $secondaryColor; 
+            }
+            
     }
     &__grade{
         padding-left:20px;
         margin-top:28px;
-        margin-bottom: 48px;
+        margin-bottom: 28px;
         @include media(sm){
             margin-top: 54px;
             }
@@ -31,7 +34,6 @@
     &__calendar{
         border:1px solid $secondaryColor;
         max-width: 770px;
-        max-height: 458px;
     }
     &__list{
         list-style: none;
@@ -92,18 +94,5 @@
             top: 35%;
             right: 0%;
         }
-        }
-    
-    &__line-bottom{
-        display:none;
-    }
-    // &__line-bottom{
-    //     margin-top:14px;
-    //     @include media(sm){
-    //     padding-top: 30px;
-    //     }
-    //     @include media(lg){
-    //     max-width: 569px;
-    //     }
-    // }
+        } 
 }
