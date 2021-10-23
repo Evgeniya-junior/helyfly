@@ -1,18 +1,11 @@
 
 
-$('.single-item').slick();
-
-
-
-// $(document).ready(function(){
-//     $('.slider').slick();
-// });
-
-
-//     $('.slider').slick({
-//       setting-name: setting-value
-//     });
-//   });
-
-//   $('.single-item').slick();
+  $(document).ready(function(){
+    $('.slider').slick({
+        infinite: true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+  });
 //# sourceMappingURL=script.js.map

@@ -1,0 +1,81 @@
+.gallery{
+    background-color:$primaryColor;
+    .container{
+        @extend %container;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        @include media(md){
+            align-items:center;
+        }
+    }
+    &__title{
+        @include text(400,26px,31px,$textColor);
+        text-align: center;
+        padding: 60px 28% 32px;
+        @include media(md){
+            text-align: left;
+            padding: 60px 0px 32px;
+        }
+    }
+    &__photo-wrapper{
+        display: grid;
+        grid-template-rows: 185px;
+        grid-template-columns: repeat(8,277px);
+        grid-gap:10px;
+        overflow: scroll;
+        @include media(md){
+            grid-template-rows: repeat(4,185px);
+            grid-template-columns: repeat(2,277px);
+            overflow: hidden;
+        }
+        @include media(lg){
+            grid-template-rows: repeat(2,185px);
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+    &__photo-4,
+    &__photo-8{
+        width: 277px;
+        height: 185px;
+    }
+    &__more,
+    &__line{
+        display: none;
+        @include media(md){
+            display:block;
+        }
+    }
+    &__more{
+        @include text(500,17px,24px,$linkColor);
+        text-decoration: none;
+        padding:47px 20px 0;
+        position: relative;
+        &::before{
+            content: "";
+            background-image: url(../images/arrow-bottom.svg);
+            background-size: cover;
+            display: inline-block;
+            width: 11px;
+            height: 6px;
+            position: absolute;
+            top:55px;
+            left:0;
+        }
+        &::after{
+            content: "";
+            background-image: url(../images/arrow-bottom.svg);
+            background-size: cover;
+            display: inline-block;
+            width: 11px;
+            height: 6px;
+            position: absolute;
+            top:55px;
+            right:0;
+        }
+    }
+    &__line{
+        margin:27px 0 57px;
+    }
+}

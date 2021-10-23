@@ -1,0 +1,22 @@
+.contact{
+    .container{
+        @extend %container;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 87px;
+        margin-bottom: 27px;
+    }
+    &__social-list{
+        width: 137px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    // &__line{
+    //     margin:23px 0 26px;
+    // }
+}

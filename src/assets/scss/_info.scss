@@ -44,7 +44,7 @@
     &__content{
         display: grid;
         grid-template-rows: repeat(4,35px);
-        grid-template-columns: 30px 270px;
+        grid-template-columns: 30px 1fr;
         grid-gap: 13px;
     }
     &__text{

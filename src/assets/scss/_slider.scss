@@ -1,0 +1,15 @@
+.slider{
+    background-color:$primaryColor;
+    &__item{
+        // background-image: url(../images/Ellipse\ 2.svg);
+    }
+    &__number{
+        @include text(400,14px,17px,$textColor);
+    }
+    &__title{
+        @include text(400,14px,17px,$textColor);
+    }
+    &__place{
+        @include text(400,14px,17px,$textColor);
+    }
+}

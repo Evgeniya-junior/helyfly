@@ -4,12 +4,7 @@
         @extend %container;
     }
     &__comment{
-        position:relative;
-        // @include media(md){
-        //     display: flex;
-        //     flex-direction: column;
-        // }
-        
+        position:relative; 
     }
     &__comment3{
         display:none;
@@ -98,5 +93,14 @@
     }
     &__line{
         margin:44px 0 20px;
+    }
+    &__all{
+        @include text(500,17px,25px,$linkColor);
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 47px;
+    }
+    &__link{
+        text-align: center;
     }
 }

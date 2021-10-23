@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>   
     <link rel="stylesheet" href="./assets/css/style.min.css">
     <title>HELYFLY</title>
 </head>
@@ -52,14 +54,14 @@
                 <img class="info__photo" src="./assets/images/info-photo.jpg" alt="Photo of kissing couple">
                 <p class="info__paragraf">Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты!</p>
                 <div class="info__content"> 
-                    <div class="info__icon"><img class="icon__clock" src="./assets/images/clock.svg" alt="clock"></div>
-                    <div class="info__text">3 часа съемки</div>
-                    <div class="info__icon"><img class="icon__camera" src="./assets/images/camera.svg" alt="camera"></div>
-                    <div class="info__text">Более 50 фотографий</div>
-                    <div class="info__icon"><img class="icon__cursor" src="./assets/images/cursor.svg" alt="cursor"></div>
-                    <div class="info__text">Москва</div>
-                    <div class="info__icon"><img class="icon__clouds" src="./assets/images/clouds.svg" alt="clouds"></div>
-                    <div class="info__text">Готовы ответить на любые вопросы</div>
+                    <img class="icon__clock" src="./assets/images/clock.svg" alt="clock">
+                    <p class="info__text">3 часа съемки</p>
+                    <img class="icon__camera" src="./assets/images/camera.svg" alt="camera">
+                    <p class="info__text">Более 50 фотографий</p>
+                    <img class="icon__cursor" src="./assets/images/cursor.svg" alt="cursor">
+                    <p class="info__text">Москва</p>
+                    <img class="icon__clouds" src="./assets/images/clouds.svg" alt="clouds">
+                    <p class="info__text">Готовы ответить на любые вопросы</p>
                 </div> 
                 <hr class="info__line-top" />
                 <div class="info__grade grade">   
@@ -85,19 +87,23 @@
         </div>
     </section>
 
-    <section class="photo">
+    <section class="gallery">
         <div class="container">
-            <h2 class="photo__title">Фотографии <br>пакета</h2>
-            <!-- <div class="slider">
-                <div class="slider__item"><img class="item__photo-1" src="./assets/images/photo-1.jpg" alt="Girl on the background of the plane"></div>
-                <div class="slider__item"><img class="item__photo-2" src="./assets/images/photo-2.jpg" alt="Girl in the helicopter cockpit"></div>
-                <div class="slider__item"><img class="item__photo-3" src="./assets/images/photo-3.jpg" alt="Helicopter cockpit"></div>
-                <div class="slider__item"><img class="item__photo-4" src="./assets/images/photo-4.jpg" alt="Photo of kissing couple"></div>
-                <div class="slider__item"><img class="item__photo-5" src="./assets/images/photo-1.jpg" alt="Girl on the background of the plane"></div>
-                <div class="slider__item"><img class="item__photo-6" src="./assets/images/photo-2.jpg" alt="Girl in the helicopter cockpit"></div>
-                <div class="slider__item"><img class="item__photo-7" src="./assets/images/photo-3.jpg" alt="Helicopter cockpit"></div>
-                <div class="slider__item"><img class="item__photo-8" src="./assets/images/photo-4.jpg" alt="Photo of kissing couple"></div>
-            </div> -->
+            <div class="gallery__wrapper">
+                <h2 class="gallery__title">Фотографии пакета</h2>
+                <div class="gallery__photo-wrapper">
+                <img class="gallery__photo-1" src="./assets/images/photo-1.jpg" alt="Girl on the background of the plane">
+                <img class="gallery__photo-2" src="./assets/images/photo-2.jpg" alt="Girl in the helicopter cockpit">
+                <img class="gallery__photo-3" src="./assets/images/photo-3.jpg" alt="Helicopter cockpit">
+                <img class="gallery__photo-4" src="./assets/images/photo-4.jpg" alt="Photo of kissing couple">
+                <img class="gallery__photo-5" src="./assets/images/photo-1.jpg" alt="Girl on the background of the plane">
+                <img class="gallery__photo-6" src="./assets/images/photo-2.jpg" alt="Girl in the helicopter cockpit">
+                <img class="gallery__photo-7" src="./assets/images/photo-3.jpg" alt="Helicopter cockpit">
+                <img class="gallery__photo-8" src="./assets/images/photo-4.jpg" alt="Photo of kissing couple">
+                </div>
+                <a href="#" class="gallery__more">Показать все фото</a>
+            </div> 
+            <hr class="gallery__line" />             
         </div>
     </section>
 
@@ -191,8 +197,14 @@
         <div class="map__meet">
             <div class="container">
                 <div class="map__wrapper">
-                    <div class="map__place">
-
+                    <div class="map__slider slider">
+                        <div class="slider__item">
+                            <p class="slider__numder">1</p>
+                            <h3 class="slider__title">Где встречаемся?</h3>
+                            <span class="slider__place">Москва</span>             
+                        </div>
+                        <div class="slider__item">2</div>
+                        <div class="slider__item">3</div>
                     </div>
                     <div class="map__photographer">
                         <div class="map__photographer-logo">
@@ -245,7 +257,7 @@
                     <hr class="reviews__line">
                 </div>         
             </div>
-            <div class="reviews__comment">
+            <div class="reviews__comment2">
                 <div class="reviews__autor">
                     <div class="reviews__autor-logo">
                         <img class="reviews__autor-photo" src="./assets/images/comment2.jpg" alt="Photo of the author of the comment" >
@@ -275,7 +287,7 @@
                     <span class="reviews__data">19 Апреля, 2019г.</span>
                     <hr class="reviews__line">
             </div>
-        </div>
+            </div>
             <div class="reviews__comment3">
                 <div class="reviews__autor">
                     <div class="reviews__autor-logo">
@@ -308,12 +320,54 @@
                     <hr class="reviews__line">
                 </div>
             </div>
+            <div class="reviews__link">
+                <a class="reviews__all" href="#" >Показать Все (134)</a>
+            </div>
+            
         </div>
     </section> 
 
-    <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/slick.min.js"></script> -->
+    <section class="contact">
+        <div class="container"> 
+          <div class="contact__wrapper">   
+            <img class="contact__logo" src="./assets/images/logo.svg" alt="logo" >
+            <div class="contact__social">
+                <ul class="contact__social-list">
+                    <li class="contact__item">
+                        <a class="contact__link" href="#" >
+                            <img class="contact__icon" src="./assets/images/vk.svg" alt="Icon vk">
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a class="contact__link" href="#" >
+                            <img class="contact__icon" src="./assets/images/Facebook.svg" alt="Icon facebook">
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a class="contact__link" href="#" >
+                            <img class="contact__icon" src="./assets/images/Instragram.svg" alt="Icon instragram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__cart">
+            <img src="./assets/images/MC.svg" alt="" class="footer__master">
+            <img src="" alt="" class="footer__viza">
+        </div>
+        <div class="footer__support">
+            <p class="footer__namber">Тех. поддержка: 8(800)700-00-00</p>
+            <p class="footer__what">© 2018 HELYFLY. All Rights Reserved.</p>
+        </div>
+        <div class="footer__language">RU</div>
+    </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

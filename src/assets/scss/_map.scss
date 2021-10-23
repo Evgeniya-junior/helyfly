@@ -4,7 +4,7 @@
         @extend %container;      
     }
     &__google{
-        height: 423px;
+        min-height: 423px;
     }
     &__wrapper{
         border:1px solid  $secondaryColor;
