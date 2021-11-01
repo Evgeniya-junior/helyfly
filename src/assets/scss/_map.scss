@@ -8,8 +8,11 @@
     }
     &__wrapper{
         border:1px solid  $secondaryColor;
-        margin: 52px 8px 40px;
+        // margin: 52px 8px 40px;
         padding:52px 25px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__photographer{
         display: flex;

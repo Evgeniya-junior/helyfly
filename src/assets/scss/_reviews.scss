@@ -78,8 +78,9 @@
     &__paragraf{
         @include text(400,14px,21px,$textColor);
         text-align: left;
-        margin-top: 15px;
+        margin-top: 13px;
         margin-bottom: 17px;
+        padding-right: 35px;
         @include media(sm){
             min-width: 505px;
         }
@@ -97,8 +98,40 @@
     &__all{
         @include text(500,17px,25px,$linkColor);
         text-align: center;
-        margin-top: 40px;
+        margin-top: 50px;
         margin-bottom: 47px;
+        padding:0 15px;
+        position: relative;
+        &::before{
+            content:"";
+            display: inline-block;
+            width: 6px;
+            height: 11px;
+            background-image:url(../images/arrow-right.svg);
+            background-size: cover;
+            position: absolute;
+            top:35%;
+            right:0;
+            @include media(md){
+                background-image: url(../images/arrow-bottom.svg);
+                width: 11px;
+                height: 6px;
+            }
+        }
+        &::after{
+            content:"";
+            width: 11px;
+            height: 6px;
+            background-image:url(../images/arrow-bottom.svg);
+            background-size: cover;
+            position: absolute;
+            top:35%;
+            left:0;
+            display: none;
+            @include media(md){
+                display: inline-block;
+            }
+        }
     }
     &__link{
         text-align: center;

@@ -4,8 +4,10 @@
         @extend %container;      
     }
     &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
         @include media(lg){
-            display:flex;
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: flex-start;
@@ -18,26 +20,26 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        &::before{
+            content:'';
+            display: inline-block;
+            background-image: url(../images/heart.svg);
+            background-size: cover;
+            width: 31px;
+            height: 27px;
+            position: absolute;
+            top:14%;
+            right: 0;
+        }
         @include media(lg){
             margin-right: 50px;
         }
     }
     &__photographer-photo{
-        position: relative;
         max-width:139px;
         margin-top: 62px;
-        margin-bottom: 25px;
-        &::before{
-            content:'';
-            display: inline-block;
-            background-image: url('./../images/heart.svg');
-            background-size: cover;
-            width: 31px;
-            height: 27px;
-            position: absolute;
-            top:0;
-            right: 0;
-        }
+        margin-bottom: 20px;
+        
     }
     
     &__photographer-name{
@@ -55,20 +57,39 @@
         padding:0 32px;
     }
     &__organizer-title{
-        @include text(500,18px,26px,$textColor);
-        margin-bottom: 14px;
-        margin-top: 30px;
+        @include text(500,18px,15px,$textColor);
+        margin-bottom:15px;
     }
     &__organizer-paragraf{
         @include text(400,16px,24px,$textColor);
-        margin-bottom: 20px;
+        margin-bottom: 26px;
         @include media(md){
             max-width: 584px;
         }
     }
+    &__organizer-paragraf2{
+        word-spacing: 6px;
+        margin-bottom: 20px;
+    }
+    
     &__organizer-link{
         @include text(500,16px,23px,$linkColor);
         text-align: left;
+        position: relative;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        display: inline-block;
+        &::after{
+            content: "";
+            background-image: url(../images/arrow-bottom.svg);
+            background-size: cover;
+            display: inline-block;
+            width: 11px;
+            height: 6px;
+            position: absolute;
+            top:8px;
+            right:0;
+        }
     }
     &__organizer-paragraf2{
         @include text(400,16px,24px,$textColor);
