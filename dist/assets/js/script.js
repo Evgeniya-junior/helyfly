@@ -8,4 +8,5 @@
         slidesToScroll: 1
     });
   });
+  
 //# sourceMappingURL=script.js.map

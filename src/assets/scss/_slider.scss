@@ -1,44 +1,42 @@
 .slider{
     background-color:$primaryColor;
-    // &__item{
-    //     background-image: url(./../images/ellipse-map.svg);
-    //     background-size:cover;
-    //     background-repeat:no-repeat;
-    // }
+    position: relative;
+    padding:0 20px; 
+    .container{
+        @extend %container;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
     &__number{
-        @include text(400,14px,17px,$textColor);
+        @include text(400,30px,44px,$primaryColor);
+        position: absolute;
+        top: 12px;
+        left: 47%;
     }
     &__title{
-        @include text(400,14px,17px,$textColor);
+        @include text(500,18px,27px,$textColor);
+        margin-top: 20px;
     }
-    &__place{
-        @include text(400,14px,17px,$textColor);
+    &__span{
+        @include text(400,18px,26px,$textColor);
+        margin-top: 10px;
     }
+}
 
+.slick-list {
+    overflow: hidden;
 }
-.slider{
-    position: relative;
-    padding:0 20px;
-}
-/* Точки (булиты) */
-.slider .slick-dots{
-    // display: flex;
-    // justify-content: center;
-    // list-style: none;
-    // font-size: 0;
-    // position: absolute;
-    // bottom: 10%;
-    // left: 45%;
+.slick-track{
     display: flex;
-    justify-content: center;
-    align-items:center;
 }
-
-
 /* Стрелка */
 .slick-arrow{
     position: absolute;
-    top:50%;
+    top:20%;
     z-index: 10;
     width: 10px;
     height: 19px;
@@ -50,61 +48,41 @@
 .slick-arrow.slick-prev{
     background-image:url(../images/arrow-left.svg);
     background-repeat:no-repeat;
-    left:0;
+    left:26px;
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
     background-image:url(../images/arrow-right.svg);
     background-repeat:no-repeat;
-    right: 0;
+    right:26px;;
 }
-
-
-
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{
-    width: 274px;
-    height: 380px;
+/* Точки (булиты) */
+.slider .slick-dots{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+    margin-top: 20px;
 }
-/* Ограничивающая оболочка */
-.slick-list {}
-/* Лента слайдов */
-.slick-track{}
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-
-
-
-
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
 .slick-dots li{
     margin-right: 10px;
 }
 /* Активная точка */
-.slick-dots li.slick-active{}
+.slick-dots li.slick-active button{
+    background-color: orange;
+}
 /* Элемент точки */
 .slick-dots li button{
-    background-color: orange;
+    background-color: white;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    border: none;
+    font-size: 0;
+}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
 }

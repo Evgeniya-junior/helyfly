@@ -1,22 +1,82 @@
 .map{
     margin-top: 45px;
+    position: relative;
     .container{
         @extend %container;      
     }
     &__google{
         min-height: 423px;
+        margin-bottom: 52px;
+        position: relative;
     }
     &__wrapper{
+        background-color:$primaryColor;
         border:1px solid  $secondaryColor;
-        // margin: 52px 8px 40px;
+        margin: 52px 8px 40px;
         padding:52px 25px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: 270px;
+        max-width: 420px;
+        @include media (sm){
+            margin:auto;
+        }
+        @include media (lg){
+            padding:58px 20px 44px 38px;
+            align-items: flex-start;
+            max-height: 469px;
+            position: absolute;
+            top: 20px;
+
+        }
+    }
+    &__list{
+        display: none;
+        @include media (lg){
+            display: block;
+        }
+    }
+    &__item{
+        display: flex;
+        position: relative;
+        margin-bottom: 18px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__item-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__img{
+        width: 66px;
+        height: 66px;
+        margin-right: 18px;
+    }
+    &__number{
+        @include text(400,30px,44px,$primaryColor);
+        position: absolute;
+        top: 12px;
+        left: 9%;
+    }
+    &__title{
+        @include text(500,18px,27px,$textColor);
+    }
+    &__span{
+        @include text(400,18px,26px,$textColor);
+    }
+    &__slider{
+        background-color:$primaryColor;
+        @include media (lg){
+            display: none;
+        }
     }
     &__photographer{
         display: flex;
         flex-direction: row;
+        margin-top: 40px;
     }
     &__photographer-logo{
         margin-right: 8px;
@@ -29,6 +89,9 @@
         flex-direction: column;
         max-width: 156px;
         display: flex;
+        @include media (lg){
+            max-width: none;
+        }
     }
     &__photographer-name{
         @include text(500,16px,16px,$textColor);

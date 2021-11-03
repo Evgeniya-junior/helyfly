@@ -3,7 +3,9 @@
     .container{
         @extend %container;
     }
-    &__comment{
+    &__comment,
+    &__comment2,
+    &__comment3{
         position:relative; 
     }
     &__comment3{
@@ -16,6 +18,7 @@
         @include text(400,26px,39px,$textColor);
         text-align: center;
         margin-bottom: 50px;
+        margin-top: 40px;
         @include media(md){
             @include text (500,20px,29px,$textColor);
             text-align: left;

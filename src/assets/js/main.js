@@ -6,3 +6,4 @@
         slidesToScroll: 1
     });
   });
+  
