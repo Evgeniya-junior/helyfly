@@ -17,7 +17,7 @@
     &__title{
         @include text(400,26px,39px,$textColor);
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 38px;
         margin-top: 40px;
         @include media(md){
             @include text (500,20px,29px,$textColor);
@@ -82,7 +82,7 @@
         @include text(400,14px,21px,$textColor);
         text-align: left;
         margin-top: 13px;
-        margin-bottom: 17px;
+        margin-bottom: 13%;
         padding-right: 35px;
         @include media(sm){
             min-width: 505px;

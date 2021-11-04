@@ -6,19 +6,20 @@
     }
     &__google{
         min-height: 423px;
-        margin-bottom: 52px;
+        margin-bottom: 50px;
         position: relative;
     }
     &__wrapper{
         background-color:$primaryColor;
         border:1px solid  $secondaryColor;
-        margin: 52px 8px 40px;
-        padding:52px 25px 20px;
+        margin: 50px 8px 40px;
+        padding:49px 20px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         min-width: 270px;
         max-width: 420px;
+        height: 380px;
         @include media (sm){
             margin:auto;
         }
@@ -77,6 +78,7 @@
         display: flex;
         flex-direction: row;
         margin-top: 40px;
+        padding-left: 10px;
     }
     &__photographer-logo{
         margin-right: 8px;
@@ -103,7 +105,6 @@
     }
     &__photographer-link{
         @include text(500,14px,21px,$linkColor);
-        margin-bottom: 20px;
         
     }
 }

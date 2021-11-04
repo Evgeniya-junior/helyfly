@@ -43,9 +43,9 @@
     }
     &__content{
         display: grid;
-        grid-template-rows: repeat(4,35px);
+        grid-template-rows: repeat(4,1fr);
         grid-template-columns: 30px 1fr;
-        grid-gap: 13px;
+        grid-gap: 10px;
     }
     &__text{
         display: flex;

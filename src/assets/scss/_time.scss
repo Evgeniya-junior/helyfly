@@ -2,7 +2,6 @@
     background-color:$primaryColor;
     .container{
         @extend %container; 
-        margin-top:52px;
         @include media(sm){
             border-top:1px solid $secondaryColor; 
             }
@@ -11,7 +10,7 @@
     &__grade{
         padding-left:20px;
         margin-top:28px;
-        margin-bottom: 28px;
+        margin-bottom: 18px;
         @include media(sm){
             margin-top: 54px;
             }
@@ -20,7 +19,7 @@
     &__title{
         @include text(400,26px,32px,$textColor);
         max-width: 288px;
-        padding: 40px 0;
+        padding: 27px 0px 40px 15px;
         margin:auto;
         @include media(sm){
             padding:10px 0 46px;
@@ -49,7 +48,6 @@
             }
     }
     &__line-center{
-        margin-bottom:5px;
         margin-top: 30px;
         @include media(sm){
             margin-bottom:0px;
@@ -72,7 +70,7 @@
     }
     &__item-place{
         @include text(400,18px,26px,$textColor);
-        padding:0px 20px 20px;
+        padding:0px 20px 18px;
         @include media(sm){
             padding:0px 20px;
         }

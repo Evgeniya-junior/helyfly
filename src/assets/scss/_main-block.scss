@@ -6,6 +6,10 @@
     .container {
         @extend %container;
     }
+    @include media(xl){
+        background-position-y: 53%;
+        height: 50vh;
+    }
     &__inner {
         display: flex;
         flex-direction: column;

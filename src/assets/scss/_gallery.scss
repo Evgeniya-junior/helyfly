@@ -13,7 +13,7 @@
     &__title{
         @include text(400,26px,31px,$textColor);
         text-align: center;
-        padding: 60px 28% 32px;
+        padding: 50px 20% 38px;
         @include media(md){
             text-align: left;
             padding: 60px 0px 32px;
@@ -23,7 +23,7 @@
         display: grid;
         grid-template-rows: 185px;
         grid-template-columns: repeat(8,277px);
-        grid-gap:10px;
+        grid-gap:13px;
         overflow: scroll;
         @include media(md){
             grid-template-rows: repeat(4,185px);
